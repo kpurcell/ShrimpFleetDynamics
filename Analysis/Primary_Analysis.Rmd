@@ -11,7 +11,7 @@ Data sources and inputs?
 The first chunk runs several scripts that gather the data from several files and formats.  In addition these scripts merge both the 1 week and 2 week data sets for examination with regression models.  This script depends on several packages which are also loaded in this chunk 1, see the ```sessionInfo()``` output for more details.  
 
 
-```{r DataImport, echo=FALSE, results='hide', message=FALSE}
+```{r DataImport, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
 setwd("C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\ShrimpFleetDynamics\\")
 source("C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\ShrimpFleetDynamics\\Data\\GatherSource\\gatherData.R")
 source("C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\ShrimpFleetDynamics\\Data\\merge2moData.R")
@@ -46,22 +46,25 @@ nspm.2mo.dur.la<-gam(log(towhours+1) ~ factor(yr) + la_fuel_price  + hrs
 
 ```
 
+### LA Model Diagnostics
+
+Overall model diagnostics look fine.  
+
 ```{r echo=FALSE, fig.align='center', fig.keep='none'}
 gam.check(m.2mo.dur.la)
 ```
 
-### model diagnostics look ok
+### LA non-spatial model results
 
 ```{r LAnspSummary, echo=FALSE}
 summary(nspm.2mo.dur.la)
 ```
-### LA non-spatial model results
+
+### LA Spatial model results
 
 ```{r LAspSummary, echo=FALSE}
 summary(m.2mo.dur.la)
 ```
-
-### LA Spatial model results
 
 
 ## Texas base model with 6 week data integration
@@ -84,7 +87,7 @@ nspm.2mo.dur.tx<-gam(log(towhours+1) ~ factor(yr) + la_fuel_price  + hrs
 ```
 
 
-```{r echo=FALSE, fig.align='center'}
+```{r echo=FALSE, fig.align='center', fig.keep='none'}
 gam.check(m.2mo.dur.tx)
 ```
 
@@ -102,7 +105,7 @@ gam.2mo.tow.count.la<-gam.2mo.tow.count.la[,c("yr","jd","hrs","do","depth", "ppn
 gam.2mo.tow.count.la<-na.omit(gam.2mo.tow.count.la)
 ```
 
-```{r echo=TRUE}
+```{r altResp, echo=TRUE}
 m.2mo.tow.count.la<-gam(tow.cnt ~ factor(yr) + la_fuel_price  + hrs   
                   + s(depth) + s(ppnd) + s(jd) + s(cent_lon,cent_lat) + 
                     s(cent_lon,cent_lat, by=do), family=poisson,

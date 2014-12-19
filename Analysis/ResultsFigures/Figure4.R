@@ -44,13 +44,13 @@ text(1.8, .22, "(b)", cex=1,font=2)
 #DO
 plot(nspm.2mo.tow.count.la, select=1, shade=T, all.terms=T, scale=0,rug=F,
      xlab=expression(paste("Dissolved Oxygen"~ (mgL^{-1}))),
-     ylab="s(Tow Count)",
+     ylab="s(Tow Density)",
      ylim=c(-1.2,0.22))
 #abline(h=0)
 text(0.55,0.22, "(c)", cex=1,font=2)
 plot(nspm.2mo.tow.count.tx, select=1, shade=T, all.terms=T, scale=0,rug=F,
      xlab=expression(paste("Dissolved Oxygen"~ (mgL^{-1}))),
-     ylab="s(Tow Count)")
+     ylab="s(Tow Density)")
 #abline(h=0)
 text(1.75, .35, "(d)", cex=1,font=2)
 dev.off()

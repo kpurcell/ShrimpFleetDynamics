@@ -6,9 +6,11 @@
 # Code by: KM Purcell
 # updated: 2013-12-13
 ###########################################################
-pdf(file="C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\NOAA_Shrimp_ELB_Analysis\\Presentation\\Article\\figure1.pdf",
+load("C:\\Users\\Kevin.Purcell\\Desktop\\2014-11-04.RData")
+
+pdf(file="C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\ShrimpFleetDynamics\\Presentation\\Article\\figure1.pdf",
     width = 4.86, height = 9.19, 
-    family = "Arial", 
+    #family = "Arial", 
     paper = "special", 
     onefile = FALSE)
 

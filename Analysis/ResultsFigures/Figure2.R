@@ -15,7 +15,7 @@
 ###########################################################
 load("C:\\Users\\Kevin.Purcell\\Desktop\\2014-11-04.RData")
 pdf(file="C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\ShrimpFleetDynamics\\Presentation\\Article\\figure2.pdf",
-    #width = 3.27, height = 4.95, 
+    #width = 5, height = 5, 
     #family = "Arial", 
     #paper = "special", 
     #onefile = FALSE

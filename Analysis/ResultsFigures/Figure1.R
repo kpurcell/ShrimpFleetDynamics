@@ -9,10 +9,11 @@
 load("C:\\Users\\Kevin.Purcell\\Desktop\\2014-11-04.RData")
 
 pdf(file="C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\ShrimpFleetDynamics\\Presentation\\Article\\figure1.pdf",
-    width = 4.86, height = 9.19, 
+    #width = 4.86, height = 9.19, 
     #family = "Arial", 
-    paper = "special", 
-    onefile = FALSE)
+    #paper = "special", 
+    #onefile = FALSE
+    )
 
 # postscript(file="C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\NOAA_Shrimp_ELB_Analysis\\Presentation\\Article\\figure\\Figure1.eps", horizontal=F,
 #            onefile=F,
@@ -27,6 +28,7 @@ plot(nspm.2mo.dur.la, select=2, shade=T, all.terms=T, scale=0,rug=F,
      xlab="Depth (m)",
      ylab="s(Depth)")
 text(95, 0.41, "(a)", cex=1,font=2)
+
 plot(nspm.2mo.dur.tx, select=2, shade=T, all.terms=T, scale=0,rug=F,
      xlab="Depth (m)",
      ylab="")

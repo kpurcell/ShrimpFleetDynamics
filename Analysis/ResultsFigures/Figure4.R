@@ -10,7 +10,7 @@
 #load(file.choose())  #load R dat file
 
 pdf(file="C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\ShrimpFleetDynamics\\Presentation\\Article\\figure4.pdf",
-    width = 8, height = 8, 
+    #width = 8, height = 8, 
    # family = "Arial", 
     #paper = "special", 
     #onefile = FALSE

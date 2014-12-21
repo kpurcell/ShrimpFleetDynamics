@@ -14,7 +14,7 @@ library(maps)
 library(mapdata)
 
 pdf(file="C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\ShrimpFleetDynamics\\Presentation\\Article\\figure3.pdf",
-    width = 9, height = 9, 
+    #width = 9, height = 9, 
     #family = "Arial", 
     #paper = "special", 
     #onefile = FALSE

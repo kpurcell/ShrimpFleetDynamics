@@ -8,6 +8,8 @@
 
 **Figure 4. Alternative model smooths.** 1-dimension smooth plots for the effect of dissolved oxygen concentration on average tow duration for the Louisiana (a) and Texas (b) shelves.  Additionally the effect of dissolved oxygen concentration on tow count is visualized for the Louisiana (c) and Texas shelves (d).  Shaded areas represent the 95% confidence intervals.
 
+## Figures
+
 
 
 ## Tables

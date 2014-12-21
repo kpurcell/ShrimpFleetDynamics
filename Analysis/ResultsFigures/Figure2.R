@@ -13,6 +13,7 @@
 # [X] Textual Landmarkds for both sites
 
 ###########################################################
+load("C:\\Users\\Kevin.Purcell\\Desktop\\2014-11-04.RData")
 pdf(file="C:\\Users\\Kevin.Purcell\\Documents\\GitHub\\ShrimpFleetDynamics\\Presentation\\Article\\figure2.pdf",
     #width = 3.27, height = 4.95, 
     #family = "Arial", 
@@ -60,7 +61,8 @@ symbols(gam.2mo.dur.tx$cent_lon[sign.slope.neg.do],gam.2mo.dur.tx$cent_lat[sign.
 # add coastline
 map("worldHires", fill=T, col="grey",add=T)
 # add text label
-text(-97.14, 29.55, "(b)", cex=1,font=2)
+text(-97.37, 29.6, "(a)", cex=1,font=2)
+text(-95.24, 29.6, "GB", cex=1,font=1)
 
 #add bubble legend
 rect(-94.4, 25.3, -93.9, 27, col = "white", border = "black") # coloured
@@ -102,7 +104,10 @@ symbols(gam.2mo.dur.la$cent_lon[sign.slope.neg.do],gam.2mo.dur.la$cent_lat[sign.
 # add coastline
 map("worldHires", fill=T, col="grey",add=T)
 # add text label
-text(-93.6, 29.9, "(a)", cex=1,font=2)
+text(-94.05, 29.9, "(b)", cex=1,font=2)
+text(-91.5, 29.9, "AB", cex=1,font=1)
+text(-90.5, 29.5, "TB", cex=1,font=1)
+text(-90., 29.7, "LB", cex=1,font=1)
 
 #add bubble legend.
 rect(-89.81, 27.5, -89, 28.55, col = "white", border = "black") # coloured

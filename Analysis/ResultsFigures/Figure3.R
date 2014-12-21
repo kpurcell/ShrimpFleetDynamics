@@ -36,6 +36,9 @@ vis.gam(m2008.la, view=c("cent_lon", "cent_lat"), zlim=c(-1,5), ylim=c(28,30),
         main="High Hypoxia", ylab=expression(paste("Latitude" ~ (degree~N))), xlab=expression(paste("Longitude" ~ (degree~W))))
 map("worldHires", fill=T, col="grey",add=T)
 text(-93.5, 29.94, "(a)", cex=1,font=2)
+text(-91.5, 29.9, "AB", cex=1,font=1)
+text(-90.5, 29.5, "TB", cex=1,font=1)
+text(-90., 29.7, "LB", cex=1,font=1)
 
 #Plot model predicted surface for Tx model
 vis.gam(m2009.la, view=c("cent_lon", "cent_lat"),zlim=c(-1,5),ylim=c(28,30),
@@ -45,6 +48,9 @@ vis.gam(m2009.la, view=c("cent_lon", "cent_lat"),zlim=c(-1,5),ylim=c(28,30),
 #add coastline
 map("worldHires", fill=T, col="grey",add=T)
 text(-93.5, 29.94, "(b)", cex=1,font=2)
+text(-91.5, 29.9, "AB", cex=1,font=1)
+text(-90.5, 29.5, "TB", cex=1,font=1)
+text(-90., 29.7, "LB", cex=1,font=1)
 
 vis.gam(m2008.tx, view=c("cent_lon", "cent_lat"),zlim=c(-1,5),
         plot.type="contour", type="response", contour="black",
@@ -53,6 +59,8 @@ vis.gam(m2008.tx, view=c("cent_lon", "cent_lat"),zlim=c(-1,5),
 #add coastline
 map("worldHires", fill=T, col="grey",add=T)
 text(-97.1, 29.58, "(c)", cex=1,font=2)
+text(-95.24, 29.6, "GB", cex=1,font=1)
+
 #Plot model predictions surfaces for LA model
 vis.gam(m2009.tx, view=c("cent_lon", "cent_lat"), zlim=c(-1,5),
         plot.type="contour", type="response", contour="black",
@@ -62,6 +70,7 @@ vis.gam(m2009.tx, view=c("cent_lon", "cent_lat"), zlim=c(-1,5),
 #add coastline
 map("worldHires", fill=T, col="grey",add=T)
 text(-97.1, 29.58, "(d)", cex=1,font=2)
+text(-95.24, 29.6, "GB", cex=1,font=1)
 
 dev.off()
 

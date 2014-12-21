@@ -2,9 +2,9 @@
 
 **Figure 1. Model smooths.** 1-dimensional smooth plots for the effect of predictor variables on shrimping effort. Left column plots are for the Louisiana model and right column plots are for the Texas model. The effects of dissolved oxygen (mg^-1^L) (a,b), depth in meters (m)(c,d) and price per pound in US dollars (USD) (e,f) and Julian day (g,h). Shaded area represents the 95% confidence intervals.
  
-**Figure 2. Model predictions.** Geospatial regression model predictions of shrimping effort for the Louisiana (a) and Texas (b) coastal shelves under average model conditions. Circles represent the rate of change in shrimping effort with dissolved oxygen where positive slopes are shown in black and negative slopes are shown in red.
+**Figure 2. Model predictions.** Geospatial regression model predictions of shrimping effort for the Texas (a) and Louisiana (b) coastal shelves under average model conditions. Circles represent the rate of change in shrimping effort with dissolved oxygen where positive slopes are shown in black and negative slopes are shown in red.  Geographical reference points including Galveston Bay (GB) in Texas and Atchafalaya Bay (AB), Terrebonne Bay (TB), and the Louisiana Bight (LB) in Louisiana are identified.
 
-**Figure 3. Model predictions for years of severe (2008) and moderate (2009) hypoxia.** Geospatial regression model predictions of  shrimping effort  on the Louisiana (a, b) and Texas (c, d) continental shelf under severe and moderate hypoxia.
+**Figure 3. Model predictions for years of severe (2008) and moderate (2009) hypoxia.** Geospatial regression model predictions of  shrimping effort  on the Louisiana (a, b) and Texas (c, d) continental shelf under severe and moderate hypoxia.  Geographical reference points including Galveston Bay (GB) in Texas and Atchafalaya Bay (AB), Terrebonne Bay (TB), and the Louisiana Bight (LB) in Louisiana are identified.
 
 **Figure 4. Alternative model smooths.** 1-dimension smooth plots for the effect of dissolved oxygen concentration on average tow duration for the Louisiana (a) and Texas (b) shelves.  Additionally the effect of dissolved oxygen concentration on tow count is visualized for the Louisiana (c) and Texas shelves (d).  Shaded areas represent the 95% confidence intervals.
 

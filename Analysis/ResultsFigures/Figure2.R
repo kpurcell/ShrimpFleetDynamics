@@ -47,7 +47,7 @@ max.do<-max(abs(pred.slope.do))
 # plot model output surface predications
 vis.gam(m.2mo.dur.tx, view=c("cent_lon", "cent_lat"), 
         plot.type="contour", type="response", contour="black",
-        color="bw", n.grid=30, too.far=0.4, zlim=c(0.5,4.5),
+        color="terrain", n.grid=30, too.far=0.4, zlim=c(0.5,4.5),
         main="", ylab=expression(paste("Latitude" ~ (degree~N))), 
         xlab=expression(paste("Longitude" ~ (degree~W))), 
         ylim=c(25.3,29.8), xlim=c(-97.35,-93.8))
@@ -61,8 +61,9 @@ symbols(gam.2mo.dur.tx$cent_lon[sign.slope.neg.do],gam.2mo.dur.tx$cent_lat[sign.
 # add coastline
 map("worldHires", fill=T, col="grey",add=T)
 # add text label
-text(-97.37, 29.6, "(a)", cex=1,font=2)
+text(-97.27, 29.6, "(a)", cex=1,font=2)
 text(-95.24, 29.6, "GB", cex=1,font=1)
+text(-97.26, 28.3, "CC", cex=1,font=1)
 
 #add bubble legend
 rect(-94.4, 25.3, -93.9, 27, col = "white", border = "black") # coloured
@@ -86,9 +87,9 @@ max.do<-max(abs(pred.slope.do))
 # plot model output surface predictions
 vis.gam(m.2mo.dur.la, view=c("cent_lon", "cent_lat"), 
         plot.type="contour", type="response", contour="black",
-        color="bw", n.grid=30, too.far=0.4, zlim=c(0.5,4.5),
+        color="terrain", n.grid=30, too.far=0.4, zlim=c(0.5,4.5),
         main="", ylab=expression(paste("Latitude" ~ (degree~N))), xlab=expression(paste("Longitude" ~ (degree~W))), ylim=c(27.5,30),
-        xlim=c(-94, -88.9))
+        xlim=c(-93.9, -88.9))
 
 
 #plot symbols that = significant slopes
@@ -104,7 +105,7 @@ symbols(gam.2mo.dur.la$cent_lon[sign.slope.neg.do],gam.2mo.dur.la$cent_lat[sign.
 # add coastline
 map("worldHires", fill=T, col="grey",add=T)
 # add text label
-text(-94.05, 29.9, "(b)", cex=1,font=2)
+text(-93.7, 29.88, "(b)", cex=1,font=2)
 text(-91.5, 29.9, "AB", cex=1,font=1)
 text(-90.5, 29.5, "TB", cex=1,font=1)
 text(-90., 29.7, "LB", cex=1,font=1)
